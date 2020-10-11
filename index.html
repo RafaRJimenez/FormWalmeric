@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario Walmeric</title>
+	<link rel="stylesheet" type="text/css" href="modalStyles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	
+	<div id="openModal">
+		ABRIR MODAL
+	</div>
+
+
+	<div id="modal">
+	  <div class="modal-content">
+	    <span id="close">&times;</span>
+		  <form>
+			  <label for="name">NOMBRE:</label><br>
+			  <input type="text" id="name" required><br>
+			  <div id="checkName">El campo esta vacío, debes introducir un nombre</div>
+			  <label for="email">EMAIL:</label><br>
+			  <input type="email" id="email" required><br>
+			  <div id="checkEmail">El formato de Email no es correcto o está vacío</div>
+			  <label for="phoneNumber">TELÉFONO:</label><br>
+			  <input type="text" id="phoneNumber" required>
+			  <div id="checkPhoneNumber">El formato de teléfono no es correcto o está vacío</div>
+			  <input class="send-form" onclick="checkAllContent()" type="button" value="Enviar Formulario">
+		  </form>
+	  </div>
+	</div>
+
+	<script src="modal.js"></script>
+</body>
+</html>
